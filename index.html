@@ -1,0 +1,365 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dhankrishna Trade & Supplies</title>
+
+    <style>
+      :root {
+        --primary: #d35400;
+        --accent: #e67e22;
+        --bg: #fff8e1;
+        --text: #333;
+      }
+
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: var(--bg);
+        color: var(--text);
+      }
+
+      /* HEADER + HERO */
+      header {
+        position: relative;
+        color: white;
+      }
+
+      .hero {
+        width: 100%;
+        height: 55vh;
+        background-image: url("storefront.jpg");
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        text-shadow: 2px 2px 5px #000;
+        padding: 20px;
+        animation: fadeIn 1.5s ease-in-out;
+      }
+
+      .hero-logo {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        background: rgba(0, 0, 0, 0.6);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 15px;
+        overflow: hidden;
+      }
+
+      .hero-logo img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .hero h1 {
+        font-size: 38px;
+        margin: 0;
+      }
+
+      .hero p {
+        font-size: 18px;
+        margin-top: 8px;
+      }
+
+      /* NAV */
+      nav {
+        background: var(--primary);
+        padding: 10px;
+        text-align: center;
+        position: sticky;
+        top: 0;
+        z-index: 10;
+      }
+
+      nav a {
+        color: white;
+        margin: 0 10px;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 15px;
+      }
+
+      .lang-toggle {
+        margin-left: 10px;
+        padding: 5px 10px;
+        border-radius: 20px;
+        border: none;
+        background: #fff;
+        color: var(--primary);
+        font-weight: bold;
+        cursor: pointer;
+      }
+
+      /* SECTIONS */
+      section {
+        padding: 25px;
+        max-width: 1000px;
+        margin: auto;
+        animation: fadeUp 0.8s ease-in-out;
+      }
+
+      h2 {
+        color: var(--accent);
+        margin-bottom: 10px;
+      }
+
+      .two-column {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        align-items: flex-start;
+      }
+
+      .two-column .text {
+        flex: 1 1 250px;
+      }
+
+      .two-column .image {
+        flex: 1 1 250px;
+      }
+
+      .two-column img {
+        width: 100%;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+      }
+
+      ul {
+        padding-left: 20px;
+      }
+
+      footer {
+        background: var(--primary);
+        color: white;
+        text-align: center;
+        padding: 20px;
+        margin-top: 30px;
+      }
+
+      /* ANIMATIONS */
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: scale(1.02);
+        }
+        to {
+          opacity: 1;
+          transform: scale(1);
+        }
+      }
+
+      @keyframes fadeUp {
+        from {
+          opacity: 0;
+          transform: translateY(15px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      /* MOBILE */
+      @media (max-width: 600px) {
+        .hero {
+          height: 50vh;
+        }
+        .hero h1 {
+          font-size: 26px;
+        }
+        nav a {
+          display: inline-block;
+          margin: 6px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <div class="hero">
+        <div class="hero-logo">
+          <img src="logo.png" alt="Dhankrishna Logo" />
+        </div>
+        <h1 id="hero-title">Dhankrishna Trade & Supplies</h1>
+        <p id="hero-sub">Spices • Groceries • Asian Foods</p>
+      </div>
+
+      <nav>
+        <a href="#home" id="nav-home">Home / गृहपृष्ठ</a>
+        <a href="#about" id="nav-about">About / परिचय</a>
+        <a href="#products" id="nav-products">Products / सामग्रीहरू</a>
+        <a href="#contact" id="nav-contact">Contact / सम्पर्क</a>
+        <button class="lang-toggle" id="lang-btn">NE / EN</button>
+      </nav>
+    </header>
+    <br />
+    <br />
+    <img src="store.png" alt="ak" />
+    <!-- HOME -->
+    <section id="home">
+      <h2 id="home-title">Welcome / स्वागत छ</h2>
+      <p id="home-text">
+        Dhankrishna Trade & Supplies is a trusted Asian grocery store located in
+        Attariya, Nepal. We offer a wide range of spices, grains, and daily
+        essentials with friendly service.<br /><br />
+        Dhankrishna Trade & Supplies, अत्तरियामा रहेको एक विश्वसनीय एशियाली
+        किराना पसल हो। हामी मसला, दाल, चामल, र दैनिक उपभोग्य वस्तुहरू
+        मैत्रीपूर्ण सेवासँग उपलब्ध गराउँछौं।
+      </p>
+    </section>
+
+    <!-- ABOUT + INTERIOR PHOTO -->
+    <section id="about">
+      <h2 id="about-title">About Us / हाम्रो बारेमा</h2>
+      <div class="two-column">
+        <div class="text">
+          <p id="about-text">
+            Established in Attariya, we aim to bring authentic Asian flavors to
+            your kitchen. Our store is open daily from 5 AM to 10 PM.<br /><br />
+            अत्तरियामा स्थापना गरिएको हाम्रो पसलले तपाईंको भान्सामा वास्तविक
+            एशियाली स्वाद ल्याउने उद्देश्य राखेको छ। हाम्रो पसल प्रत्येक दिन
+            बिहान ५ बजे देखि राति १० बजे सम्म खुला हुन्छ।
+          </p>
+        </div>
+        <div class="image">
+          <img src="interior.png" alt="Store Interior" />
+        </div>
+      </div>
+    </section>
+
+    <!-- PRODUCTS + PRODUCT PHOTO -->
+    <section id="products">
+      <h2 id="products-title">Products / सामग्रीहरू</h2>
+      <div class="two-column">
+        <div class="text">
+          <ul id="products-list-en">
+            <li>Spices (Turmeric, Cumin, Garam Masala)</li>
+            <li>Rice, Lentils, Beans</li>
+            <li>Instant Foods & Snacks</li>
+            <li>Frozen Items (Momo, Paratha)</li>
+            <li>Daily Essentials & Household Goods</li>
+          </ul>
+          <ul id="products-list-ne">
+            <li>मसला (बेसार, जीरा़, गरम मसला)</li>
+            <li>चामल, दाल, बीउ</li>
+            <li>इन्स्ट्यान्ट खाना र खाजा</li>
+            <li>फ्रोजन वस्तुहरू (म:म:, पराठा)</li>
+            <li>दैनिक उपभोग्य र घरायसी सामानहरू</li>
+          </ul>
+        </div>
+        <div class="image">
+          <img src="product.png" alt="Products" />
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+      <h2 id="contact-title">Contact / सम्पर्क</h2>
+      <p id="contact-text">
+        📍 VGFG+CQC, Attariya, Sudurpashchim Province 10900, Nepal<br />
+        📞 <a href="tel:+9779868870143">+9779868870143</a><br />
+        ✉️ info@dhankrishna.com<br /><br />
+        Visit us anytime — we’re open daily from 5 AM to 10 PM!<br />
+        हामी प्रत्येक दिन बिहान ५ बजे देखि राति १० बजे सम्म खुला छौं।
+      </p>
+    </section>
+
+    <footer>
+      <p>© 2026 Dhankrishna Trade & Supplies | Attariya, Nepal</p>
+    </footer>
+
+    <script>
+      // Language toggle NE / EN
+      let lang = "mixed"; // mixed: both, 'en', 'ne'
+
+      const langBtn = document.getElementById("lang-btn");
+
+      function setLanguage(mode) {
+        lang = mode;
+
+        const homeText = document.getElementById("home-text");
+        const aboutText = document.getElementById("about-text");
+        const productsEn = document.getElementById("products-list-en");
+        const productsNe = document.getElementById("products-list-ne");
+        const contactText = document.getElementById("contact-text");
+
+        if (lang === "en") {
+          homeText.innerHTML =
+            "Dhankrishna Trade & Supplies is a trusted Asian grocery store located in Attariya, Nepal. " +
+            "We offer a wide range of spices, grains, and daily essentials with friendly service.";
+          aboutText.innerHTML =
+            "Established in Attariya, we aim to bring authentic Asian flavors to your kitchen. " +
+            "Our store is open daily from 5 AM to 10 PM.";
+          contactText.innerHTML =
+            "📍 VGFG+CQC, Attariya, Sudurpashchim Province 10900, Nepal<br>" +
+            '📞 <a href="tel:+9779868870143">+9779868870143</a><br>' +
+            "✉️ info@dhankrishna.com<br><br>" +
+            "Visit us anytime — we’re open daily from 5 AM to 10 PM!";
+          productsEn.style.display = "block";
+          productsNe.style.display = "none";
+        } else if (lang === "ne") {
+          homeText.innerHTML =
+            "Dhankrishna Trade & Supplies, अत्तरियामा रहेको एक विश्वसनीय एशियाली किराना पसल हो। " +
+            "हामी मसला, दाल, चामल, र दैनिक उपभोग्य वस्तुहरू मैत्रीपूर्ण सेवासँग उपलब्ध गराउँछौं।";
+          aboutText.innerHTML =
+            "अत्तरियामा स्थापना गरिएको हाम्रो पसलले तपाईंको भान्सामा वास्तविक एशियाली स्वाद ल्याउने उद्देश्य राखेको छ। " +
+            "हाम्रो पसल प्रत्येक दिन बिहान ५ बजे देखि राति १० बजे सम्म खुला हुन्छ।";
+          contactText.innerHTML =
+            "📍 VGFG+CQC, Attariya, Sudurpashchim Province 10900, Nepal<br>" +
+            '📞 <a href="tel:+9779868870143">+9779868870143</a><br>' +
+            "✉️ info@dhankrishna.com<br><br>" +
+            "हामी प्रत्येक दिन बिहान ५ बजे देखि राति १० बजे सम्म खुला छौं।";
+          productsEn.style.display = "none";
+          productsNe.style.display = "block";
+        } else {
+          // mixed (both)
+          homeText.innerHTML =
+            "Dhankrishna Trade & Supplies is a trusted Asian grocery store located in Attariya, Nepal. " +
+            "We offer a wide range of spices, grains, and daily essentials with friendly service.<br><br>" +
+            "Dhankrishna Trade & Supplies, अत्तरियामा रहेको एक विश्वसनीय एशियाली किराना पसल हो। " +
+            "हामी मसला, दाल, चामल, र दैनिक उपभोग्य वस्तुहरू मैत्रीपूर्ण सेवासँग उपलब्ध गराउँछौं।";
+          aboutText.innerHTML =
+            "Established in Attariya, we aim to bring authentic Asian flavors to your kitchen. " +
+            "Our store is open daily from 5 AM to 10 PM.<br><br>" +
+            "अत्तरियामा स्थापना गरिएको हाम्रो पसलले तपाईंको भान्सामा वास्तविक एशियाली स्वाद ल्याउने उद्देश्य राखेको छ। " +
+            "हाम्रो पसल प्रत्येक दिन बिहान ५ बजे देखि राति १० बजे सम्म खुला हुन्छ।";
+          contactText.innerHTML =
+            "📍 VGFG+CQC, Attariya, Sudurpashchim Province 10900, Nepal<br>" +
+            '📞 <a href="tel:+9779868870143">+9779868870143</a><br>' +
+            "✉️ info@dhankrishna.com<br><br>" +
+            "Visit us anytime — we’re open daily from 5 AM to 10 PM!<br>" +
+            "हामी प्रत्येक दिन बिहान ५ बजे देखि राति १० बजे सम्म खुला छौं।";
+          productsEn.style.display = "block";
+          productsNe.style.display = "block";
+        }
+      }
+
+      langBtn.addEventListener("click", () => {
+        if (lang === "mixed") {
+          setLanguage("en");
+          langBtn.textContent = "EN";
+        } else if (lang === "en") {
+          setLanguage("ne");
+          langBtn.textContent = "NE";
+        } else {
+          setLanguage("mixed");
+          langBtn.textContent = "NE / EN";
+        }
+      });
+
+      // 初期状態：両方表示
+      setLanguage("mixed");
+    </script>
+  </body>
+</html>
